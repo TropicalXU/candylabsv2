@@ -42,26 +42,26 @@ module.exports = function(grunt) {
             }
         },
         //** configuring copy task */
-        copy: {
-            html: {
-                files: [{
-                    expand: true,
-                    dot: true,
-                    cwd: './',
-                    src: ['*.html'],
-                    dest: 'dist'
-                }]
-            },
-            fonts: {
-                files: [{
-                    expand: true,
-                    dot: true,
-                    cwd: 'node_modules/font-awesome',
-                    src: ['fonts/*.*'],
-                    dest: 'dist'
-                }]
-            }
-        },
+        // copy: {
+        //     html: {
+        //         files: [{
+        //             expand: true,
+        //             dot: true,
+        //             cwd: './',
+        //             src: ['*.html'],
+        //             dest: 'dist'
+        //         }]
+        //     },
+        //     fonts: {
+        //         files: [{
+        //             expand: true,
+        //             dot: true,
+        //             cwd: 'node_modules/font-awesome',
+        //             src: ['fonts/*.*'],
+        //             dest: 'dist'
+        //         }]
+        //     }
+        // },
         //** configuring clean task */
         clean: {
             build: {
