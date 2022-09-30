@@ -7,17 +7,9 @@
     "npm": "8.5.5"
   },
   "scripts": {
-    "start": "npm run watch:all",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "lite": "lite-server",
-    "scss": "node-sass -o css/ css/",
-    "watch": "run-p serve watch:*",
-    "watch:all": "npm run lite",
-    "clean": "rimraf dist",
-    "imagemin": "imagemin img/* --out-dir='dist/img'",
-    "usemin": "usemin contact.html -d dist --htmlmin -o dist/contact.html && usemin about.html -d dist --htmlmin -o dist/about.html && usemin index.html -d dist --htmlmin -o dist/index.html && usemin products.html -d dist --htmlmin -o dist/products.html && usemin gifts.html -d dist --htmlmin -o dist/gifts.html && usemin specials.html -d dist --htmlmin -o dist/specials.html && usemin termsAndConditions.html -d dist --htmlmin -o dist/termsAndConditions.html && usemin privacyPolicy.html -d dist --htmlmin -o dist/privacyPolicy.html",
-    "serve": "browser-sync start --server --files --port $PORT \"dist/css/*.css, dist/js/*.js, **/*.html, !node_modules/**/*.html\"",
-    "build": "npm run clean && npm run copyfonts && npm run usemin"
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+
   },
   "keywords": [],
   "author": "",
