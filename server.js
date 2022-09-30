@@ -17,11 +17,11 @@ app.use((err, req, res, next) => {
 });
 
 app.get('/', (req, res) => {
-    res.render('index.html')
+    res.render('index')
 });
 
 app.get('/contact', (req, res) => {
-    res.render('contact.html')
+    res.render('contact')
 });
 
 
