@@ -1,9 +1,10 @@
 const express = require('express');
+const ejs = require('ejs');
 
 const app = express();
 
 app.set('views', __dirname + '/views');
-app.engine('html');
+app.engine('html', ejs);
 
 app.use((err, req, res, next) => {
     const { statusCode = 500 } = err;
