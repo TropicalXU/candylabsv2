@@ -3,9 +3,9 @@ const ejs = require('ejs');
 
 const app = express();
 
-app.set('views', __dirname + '/views');
 app.engine('html', ejs);
 app.set('view engine', 'ejs');
+app.set('views', __dirname + '/views');
 
 app.use(express.json());
 
@@ -18,10 +18,6 @@ app.use((err, req, res, next) => {
 
 app.get('/', (req, res) => {
     res.render('index')
-});
-
-app.get('/contact', (req, res) => {
-    res.render('contact')
 });
 
 
