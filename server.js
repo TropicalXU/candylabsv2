@@ -28,6 +28,13 @@ app.get('/', (req, res) => {
     res.render('index')
 });
 
+app.get('/about', (req, res) => {
+    res.render('about')
+});
+
+app.get('/products', (req, res) => {
+    res.render('products')
+});
 
 const port = process.env.PORT || 3000
 app.listen(port, () => {
