@@ -5,6 +5,13 @@ const app = express();
 app.set('views', __dirname + '/views');
 app.engine('html');
 
+app.use((err, req, res, next) => {
+    const { statusCode = 500 } = err;
+    if (!err.message) err.message = 'Oh No, Something Went Wrong!'
+    res.status(statusCode).render('error', { err })
+    next()
+});
+
 app.get('/', (req, res) => {
     res.render('index.html')
 });
