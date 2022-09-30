@@ -1,0 +1,41 @@
+{
+  "name": "candylabsv2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run watch:all",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lite": "lite-server",
+    "scss": "node-sass -o css/ css/",
+    "watch:scss": "onchange 'css/*.scss' -- npm run scss",
+    "watch:all": "parallelshell 'npm run watch:scss' 'npm run lite'",
+    "clean": "rimraf dist",
+    "copyfonts": "copyfiles -f node_modules/font-awesome/fonts/* dist/fonts",
+    "imagemin": "imagemin img/* --out-dir='dist/img'",
+    "usemin": "usemin contact.html -d dist --htmlmin -o dist/contact.html && usemin about.html -d dist --htmlmin -o dist/about.html && usemin index.html -d dist --htmlmin -o dist/index.html && usemin products.html -d dist --htmlmin -o dist/products.html && usemin gifts.html -d dist --htmlmin -o dist/gifts.html && usemin specials.html -d dist --htmlmin -o dist/specials.html && usemin termsAndConditions.html -d dist --htmlmin -o dist/termsAndConditions.html && usemin privacyPolicy.html -d dist --htmlmin -o dist/privacyPolicy.html",
+    "build": "npm run clean && npm run imagemin && npm run copyfonts && npm run usemin"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cssmin": "^0.4.3",
+    "grunt": "^1.0.2",
+    "grunt-browser-sync": "^2.2.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-sass": "^3.1.0",
+    "htmlmin": "^0.0.7",
+    "jit-grunt": "^0.10.0",
+    "lite-server": "^2.6.1",
+    "node-sass": "^7.0.3",
+    "onchange": "^3.3.0",
+    "rimraf": "^2.6.2",
+    "time-grunt": "^1.4.0",
+    "uglifyjs": "^2.4.11",
+    "usemin-cli": "^0.5.1"
+  },
+  "dependencies": {
+    "parallelshell": "^3.0.1"
+  }
+}
