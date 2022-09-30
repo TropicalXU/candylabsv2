@@ -24,24 +24,24 @@ module.exports = function(grunt) {
             tasks: ['sass']
         },
         //**configuring browserSync task */
-        browserSync: {
-            dev: {
-                bsFiles: {
-                    src: [
-                        'css/*.css',
-                        '*.html',
-                        'js/*.js'
-                    ]
-                },
-                options: {
-                    watchTask: true,
-                    server: {
-                        open: false,
-                        baseDir: './',
-                    }
-                }
-            }
-        },
+        // browserSync: {
+        //     dev: {
+        //         bsFiles: {
+        //             src: [
+        //                 'css/*.css',
+        //                 '*.html',
+        //                 'js/*.js'
+        //             ]
+        //         },
+        //         options: {
+        //             watchTask: true,
+        //             server: {
+        //                 open: false,
+        //                 baseDir: './',
+        //             }
+        //         }
+        //     }
+        // },
         server: {
             port: grunt.option('port') || 3000
         },
