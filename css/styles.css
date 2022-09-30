@@ -1,0 +1,83 @@
+/* default styles */
+@media only screen and (min-width : 1200px) {
+    .carousel-caption
+    {
+      top: 23%;
+    }
+  }
+
+a:link {text-decoration: none;}
+a {
+    color: black;
+}
+
+nav {
+    box-shadow: 0 0px 10px rgb(222, 222, 222); 
+}
+
+nav a {
+    color: black;
+}
+
+.btn-link {
+    color: black;
+}
+
+.font {
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+/* NAVBAR */
+#registerBtn {
+    border: none;
+    color: white;
+    background: linear-gradient(300deg, rgb(255, 83, 83), rgb(80, 188, 255));
+}
+
+/* Home page header */
+.jumbotron {
+    background: linear-gradient(300deg, rgb(246, 111, 111), rgb(125, 205, 255));
+}
+
+.carousel {
+    border-radius: 15px;
+    max-height: 400px;
+    box-shadow: 0 0 20px rgb(222, 222, 222);
+}
+
+.card {
+    padding: 25px;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgb(222, 222, 222);
+}
+
+.card-img {
+    width: 100%;
+    max-height: 180px;
+}
+
+.gradient-bg {
+    background: linear-gradient(300deg, rgb(246, 111, 111), rgb(125, 205, 255));
+    border-radius: 15px;
+}
+
+.contact-container {
+    box-shadow: 0 0 20px rgb(222, 222, 222);
+    border-radius: 15px;
+}
+
+/* Footer */
+.footer {
+    background-color: #edf2f4;
+    margin: 0px auto;
+    padding: 20px 0px; 
+}
+
+.footer h5 {
+    color: rgb(146, 146, 146);
+}
+
+.footer a {
+    color: rgb(195, 195, 195);
+}
