@@ -37,7 +37,8 @@ module.exports = function(grunt) {
                     watchTask: true,
                     server: {
                         open: false,
-                        baseDir: './'
+                        baseDir: './',
+                        port: grunt.option('port') || 3000
                     }
                 }
             }
