@@ -36,7 +36,7 @@ module.exports = function(grunt) {
                 options: {
                     watchTask: true,
                     server: {
-                        baseDir: 'https://candylabs.layerlabs.io'
+                        baseDir: './'
                     }
                 }
             }
