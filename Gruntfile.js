@@ -38,10 +38,12 @@ module.exports = function(grunt) {
                     server: {
                         open: false,
                         baseDir: './',
-                        port: grunt.option('port') || 3000
                     }
                 }
             }
+        },
+        server: {
+            port: grunt.option('port') || 3000
         },
         //** configuring copy task */
         // copy: {
