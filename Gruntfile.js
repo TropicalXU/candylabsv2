@@ -69,17 +69,17 @@ module.exports = function(grunt) {
             }
         },
         //** configuring imagemin task */
-        imagemin: {
-            dynamic: {
-                files: [{
-                    expand: true,
-                    dont: true,
-                    cwd: './',
-                    src: ['img/*.{png,jpg,gif}'],
-                    dest: 'dist'
-                }]
-            }
-        },
+        // imagemin: {
+        //     dynamic: {
+        //         files: [{
+        //             expand: true,
+        //             dont: true,
+        //             cwd: './',
+        //             src: ['img/*.{png,jpg,gif}'],
+        //             dest: 'dist'
+        //         }]
+        //     }
+        // },
         //** configuring useminPrepare task */
         useminPrepare: {
             foo: {
