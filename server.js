@@ -24,7 +24,7 @@ app.use((err, req, res, next) => {
 });
 
 app.get('/', (req, res) => {
-    res.render('/index')
+    res.render('index')
 });
 
 
