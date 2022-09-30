@@ -5,6 +5,9 @@ const app = express();
 
 app.set('views', __dirname + '/views');
 app.engine('html', ejs);
+app.set('view engine', 'ejs');
+
+app.use(express.json());
 
 app.use((err, req, res, next) => {
     const { statusCode = 500 } = err;
