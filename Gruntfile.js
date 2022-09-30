@@ -87,7 +87,7 @@ module.exports = function(grunt) {
             foo: {
                 dest: 'dist',
                 src: [
-                    '/contact.html', 
+                    'contact.html', 
                     'about.html', 
                     'index.html',
                     'products.html',
