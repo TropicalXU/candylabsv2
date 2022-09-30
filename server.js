@@ -4,10 +4,14 @@ const ejs = require('ejs');
 
 const app = express();
 
-app.set('views', path.join(__dirname, 'views'))
+app.engine('ejs', ejsMate);
 app.set('view engine', 'ejs');
-app.engine('html', ejs);
-app.use(express.static(path.join(__dirname, '/views')));
+app.set('views', path.join(__dirname, 'views'))
+app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.urlencoded({
+    extended: false
+}));
+
 
 app.use(express.json());
 
