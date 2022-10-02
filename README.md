@@ -1,7 +1,7 @@
 # Candy Labs
 
 View the website here:
-https://vacay.layerlabs.io
+https://candylabs.layerlabs.io
 </br>
 </br>
 
